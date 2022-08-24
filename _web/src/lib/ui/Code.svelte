@@ -137,7 +137,8 @@
     </div>
     <code bind:this={code} class="overflow-auto" style="{output ? `display:none;` : ''}"/>
     {#if output}
-      <div>{@html html}</div>
+      <div style="display:none;">{@html html}</div>
+      <iframe seamless sandbox srcdoc="{html}" style="width:100%;height:100%"></iframe>
     {/if}
   </div>
 </div>
