@@ -1,8 +1,8 @@
 name: build-deploy
 on:
   push:
-    tags:
-      - v[0-9]*
+    branches:    
+      - '*'
 jobs:
   backend:
     runs-on: ubuntu-latest
